@@ -176,9 +176,11 @@ export function parseFrontmatter<T>(content: string): { data: T; content: string
             }
             // Parse arrays
             if (value.startsWith('[') && value.endsWith(']')) {
-                value = value.slice(1, -1).split(',').map(v => v.trim().replace(/['"]/g, ''));
+                const arr = value.slice(1, -1).split(',').map(v => v.trim().replace(/['"]/g, ''));
+                (data as Record<string, unknown>)[key.trim()] = arr;
+            } else {
+                data[key.trim()] = value;
             }
-            data[key.trim()] = value;
         }
     });
 

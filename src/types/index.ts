@@ -18,7 +18,7 @@ export interface Post {
 export interface Author {
     name: string;
     avatar: string;
-    bio: string;
+    bio?: string;
     twitter?: string;
     website?: string;
 }

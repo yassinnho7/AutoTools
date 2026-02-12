@@ -97,25 +97,12 @@ export function Footer() {
                         <p className="text-secondary-400 mb-4">
                             Get weekly AI tool reviews and tips delivered to your inbox.
                         </p>
-                        <form
-                            action="/api/newsletter"
-                            method="POST"
-                            className="flex flex-col gap-3"
+                        <Link
+                            href="/newsletter"
+                            className="btn-primary w-full"
                         >
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Enter your email"
-                                required
-                                className="px-4 py-3 bg-secondary-800 border border-secondary-700 rounded-lg focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all text-white placeholder:text-secondary-500"
-                            />
-                            <button
-                                type="submit"
-                                className="btn-primary w-full"
-                            >
-                                Subscribe Free
-                            </button>
-                        </form>
+                            Subscribe Free
+                        </Link>
                     </div>
                 </div>
             </div>

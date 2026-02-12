@@ -1,32 +1,23 @@
 import { createClient } from '@supabase/supabase-js';
-import type { Database } from '@/types/database';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 
 /**
  * Supabase client for client-side operations
+ * For static export, we provide a simplified client
  */
-export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 /**
- * Supabase admin client for server-side operations
+ * Supabase admin client - not needed for static export
  */
 export const supabaseAdmin = () => {
-    const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-    if (!serviceRoleKey) {
-        throw new Error('SUPABASE_SERVICE_ROLE_KEY is not defined');
-    }
-    return createClient<Database>(supabaseUrl, serviceRoleKey, {
-        auth: {
-            autoRefreshToken: false,
-            persistSession: false,
-        },
-    });
+    throw new Error('Admin operations not supported in static export');
 };
 
 /**
- * Types for database tables
+ * Types for database tables (simplified for static export)
  */
 export interface SubscriberRow {
     id: string;
@@ -57,7 +48,8 @@ export interface PageViewRow {
 }
 
 /**
- * Track affiliate link click
+ * Track affiliate click - simplified for static export
+ * For full tracking, use webhooks or serverless functions
  */
 export async function trackAffiliateClick(
     slug: string,
@@ -66,42 +58,23 @@ export async function trackAffiliateClick(
     userAgent: string,
     referrer: string | null
 ): Promise<void> {
-    try {
-        const admin = supabaseAdmin();
-        await admin.from('affiliate_clicks').insert({
-            slug,
-            url,
-            ip_address: ipAddress,
-            user_agent: userAgent,
-            referrer,
-            created_at: new Date().toISOString(),
-        });
-    } catch (error) {
-        console.error('Error tracking affiliate click:', error);
-    }
+    // Static export - log only, no database writes
+    console.log('Affiliate click tracked:', { slug, url, ipAddress, userAgent, referrer });
 }
 
 /**
- * Get affiliate link by slug
+ * Get affiliate link by slug - returns null for static export
+ * Links should be hardcoded in the frontend for static sites
  */
 export async function getAffiliateLink(slug: string): Promise<{ url: string } | null> {
-    try {
-        const { data, error } = await supabase
-            .from('affiliate_links')
-            .select('url')
-            .eq('slug', slug)
-            .single();
-
-        if (error || !data) return null;
-        return data;
-    } catch (error) {
-        console.error('Error getting affiliate link:', error);
-        return null;
-    }
+    // Static export - links should be configured in the frontend
+    console.log('getAffiliateLink called for:', slug);
+    return null;
 }
 
 /**
- * Add subscriber
+ * Add subscriber - simplified for static export
+ * Uses Brevo API directly from client-side
  */
 export async function addSubscriber(
     email: string,
@@ -109,92 +82,34 @@ export async function addSubscriber(
     source: string = 'website',
     tags: string[] = []
 ): Promise<{ success: boolean; error?: string }> {
-    try {
-        const { error } = await supabase.from('subscribers').upsert(
-            {
-                email,
-                name,
-                source,
-                tags,
-                updated_at: new Date().toISOString(),
-            },
-            {
-                onConflict: 'email',
-            }
-        );
-
-        if (error) throw error;
-        return { success: true };
-    } catch (error) {
-        console.error('Error adding subscriber:', error);
-        return {
-            success: false,
-            error: error instanceof Error ? error.message : 'Unknown error',
-        };
-    }
+    // For static export, this should be handled via client-side API call to Brevo
+    console.log('Add subscriber requested:', { email, name, source, tags });
+    return { success: false, error: 'Use client-side Brevo integration' };
 }
 
 /**
- * Get subscriber count
+ * Get subscriber count - returns 0 for static export
  */
 export async function getSubscriberCount(): Promise<number> {
-    try {
-        const { count, error } = await supabase
-            .from('subscribers')
-            .select('*', { count: 'exact', head: true });
-
-        if (error) throw error;
-        return count || 0;
-    } catch (error) {
-        console.error('Error getting subscriber count:', error);
-        return 0;
-    }
+    return 0;
 }
 
 /**
- * Track page view
+ * Track page view - simplified for static export
+ * Cloudflare Analytics should be used instead
  */
 export async function trackPageView(
     path: string,
     referrer: string | null,
     country: string | null
 ): Promise<void> {
-    try {
-        await supabase.from('page_views').insert({
-            path,
-            referrer,
-            country,
-            created_at: new Date().toISOString(),
-        });
-    } catch (error) {
-        console.error('Error tracking page view:', error);
-    }
+    // Use Cloudflare Web Analytics for static sites
+    console.log('Page view:', { path, referrer, country });
 }
 
 /**
- * Get popular pages
+ * Get popular pages - returns empty array for static export
  */
 export async function getPopularPages(limit: number = 10): Promise<Array<{ path: string; count: number }>> {
-    try {
-        const { data, error } = await supabase
-            .from('page_views')
-            .select('path')
-            .order('created_at', { ascending: false })
-            .limit(1000);
-
-        if (error || !data) return [];
-
-        const counts: Record<string, number> = {};
-        data.forEach((row) => {
-            counts[row.path] = (counts[row.path] || 0) + 1;
-        });
-
-        return Object.entries(counts)
-            .map(([path, count]) => ({ path, count }))
-            .sort((a, b) => b.count - a.count)
-            .slice(0, limit);
-    } catch (error) {
-        console.error('Error getting popular pages:', error);
-        return [];
-    }
+    return [];
 }
