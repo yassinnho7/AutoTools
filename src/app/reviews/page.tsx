@@ -1,182 +1,201 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import { AffiliateButton } from '@/components/affiliate';
-import { Star, ThumbsUp, ThumbsDown, ArrowRight } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'AI Tool Reviews',
-    description: 'In-depth, honest reviews of AI tools and software. Make informed decisions with our expert analysis.',
+    title: 'AI Tool Reviews 2026',
+    description: 'In-depth, honest reviews of the latest AI tools in 2026. Make informed decisions with our expert analysis.',
 };
 
+// Updated reviews for February 2026
 const reviews = [
     {
         id: '1',
-        productName: 'ChatGPT',
+        productName: 'GPT-5',
         productLogo: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200',
-        title: 'ChatGPT Review: Still the Best AI Assistant in 2024?',
-        slug: 'chatgpt-review',
-        summary: 'ChatGPT remains one of the most versatile AI assistants available. Excellent for general tasks, coding, and creative writing.',
-        pros: ['Versatile and powerful', 'Easy to use', 'Great for coding', 'Regular updates'],
-        cons: ['Can hallucinate facts', 'Knowledge cutoff', 'Rate limits on free tier'],
-        rating: 4.8,
-        ratingBreakdown: { features: 4.8, easeOfUse: 5.0, value: 4.5, support: 4.5 },
+        title: 'GPT-5 Review: Is It the Best AI in 2026?',
+        slug: 'gpt5-review-2026',
+        summary: 'OpenAI\'s GPT-5 sets new benchmarks with improved reasoning, multimodal capabilities, and agent-like features. The new o1 model integration makes it exceptional for complex tasks.',
+        pros: ['Advanced reasoning', 'Multimodal excellence', 'Agent features', 'Great API'],
+        cons: ['Premium pricing', 'Rate limits', 'Can still hallucinate'],
+        rating: 4.9,
+        ratingBreakdown: { features: 4.9, easeOfUse: 4.8, value: 4.7, support: 4.8 },
         affiliateUrl: 'https://chat.openai.com',
         coverImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800',
-        date: '2024-01-15',
-        category: 'AI Writing',
+        date: '2026-02-10',
+        category: 'AI Assistants',
     },
     {
         id: '2',
-        productName: 'Claude',
+        productName: 'Claude 4',
         productLogo: 'https://images.unsplash.com/photo-1684163761883-c81a1acd8d4d?w=200',
-        title: 'Claude Review: The Thinking Person\'s AI',
-        slug: 'claude-review',
-        summary: 'Claude excels at nuanced reasoning and long-form content. Its 200K context window is a game-changer.',
-        pros: ['Excellent reasoning', 'Long context window', 'Safe and ethical', 'Great for analysis'],
-        cons: ['Slower responses', 'Less creative', 'Fewer integrations'],
-        rating: 4.9,
-        ratingBreakdown: { features: 4.9, easeOfUse: 4.8, value: 4.8, support: 4.9 },
+        title: 'Claude 4 Review: The Thinking AI Champion',
+        slug: 'claude-4-review-2026',
+        summary: 'Claude 4 continues Anthropic\'s focus on safe, helpful AI. The new Claude Code agent makes it exceptional for developers.',
+        pros: ['Superb reasoning', 'Claude Code agent', 'Extended context', 'Safe by design'],
+        cons: ['Smaller community', 'Fewer plugins', 'Can be conservative'],
+        rating: 4.8,
+        ratingBreakdown: { features: 4.8, easeOfUse: 4.9, value: 4.7, support: 4.8 },
         affiliateUrl: 'https://claude.ai',
         coverImage: 'https://images.unsplash.com/photo-1684163761883-c81a1acd8d4d?w=800',
-        date: '2024-01-12',
-        category: 'AI Writing',
+        date: '2026-02-08',
+        category: 'AI Assistants',
     },
     {
         id: '3',
-        productName: 'Midjourney',
-        productLogo: 'https://images.unsplash.com/photo-1686191128892-3b37add4c844?w=200',
-        title: 'Midjourney Review: Create Stunning AI Art',
-        slug: 'midjourney-review',
-        summary: 'Midjourney produces some of the most beautiful AI-generated artwork. Perfect for designers and creators.',
-        pros: ['Stunning output quality', 'Active community', 'Regular model updates', 'Style variety'],
-        cons: ['Discord-only interface', 'Learning curve', 'No API access'],
+        productName: 'Runway Gen-3',
+        productLogo: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=200',
+        title: 'Runway Gen-3 Review: AI Video Revolution',
+        slug: 'runway-gen3-review-2026',
+        summary: 'Runway Gen-3 Alpha delivers photorealistic video generation with unprecedented control. A game-changer for content creators.',
+        pros: ['Photorealistic output', 'Advanced controls', 'Regular updates', 'Team features'],
+        cons: ['Credit-based pricing', 'Processing time', 'Learning curve'],
         rating: 4.7,
-        ratingBreakdown: { features: 4.5, easeOfUse: 4.2, value: 4.8, support: 4.5 },
+        ratingBreakdown: { features: 4.9, easeOfUse: 4.5, value: 4.5, support: 4.6 },
+        affiliateUrl: 'https://runwayml.com',
+        coverImage: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800',
+        date: '2026-02-05',
+        category: 'AI Video',
+    },
+    {
+        id: '4',
+        productName: 'ElevenLabs',
+        productLogo: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=200',
+        title: 'ElevenLabs Review: Best AI Voice in 2026?',
+        slug: 'elevenlabs-review-2026',
+        summary: 'ElevenLabs remains the leader in AI voice generation with voice cloning, multilingual support, and emotional expression.',
+        pros: ['Voice cloning', 'Multilingual', 'Emotional range', 'API access'],
+        cons: ['Credit limits', 'Can be misused', 'Pricing changes'],
+        rating: 4.8,
+        ratingBreakdown: { features: 4.9, easeOfUse: 4.8, value: 4.6, support: 4.7 },
+        affiliateUrl: 'https://elevenlabs.io',
+        coverImage: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800',
+        date: '2026-02-01',
+        category: 'AI Voice',
+    },
+    {
+        id: '5',
+        productName: 'Midjourney V7',
+        productLogo: 'https://images.unsplash.com/photo-1686191128892-3b37add4c844?w=200',
+        title: 'Midjourney V7 Review: AI Art Evolution',
+        slug: 'midjourney-v7-review-2026',
+        summary: 'Midjourney V7 brings dramatic improvements in image quality, consistency, and new features like Style Tuner.',
+        pros: ['Stunning quality', 'Style Tuner', 'Consistency', 'Active community'],
+        cons: ['Discord-only', 'Credit system', 'Learning curve'],
+        rating: 4.7,
+        ratingBreakdown: { features: 4.8, easeOfUse: 4.3, value: 4.6, support: 4.5 },
         affiliateUrl: 'https://midjourney.com',
         coverImage: 'https://images.unsplash.com/photo-1686191128892-3b37add4c844?w=800',
-        date: '2024-01-10',
+        date: '2026-01-25',
         category: 'AI Design',
+    },
+    {
+        id: '6',
+        productName: 'Perplexity AI',
+        productLogo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200',
+        title: 'Perplexity AI Review: The New Search Engine',
+        slug: 'perplexity-review-2026',
+        summary: 'Perplexity challenges Google with AI-powered search that provides direct answers with sources. Essential for researchers.',
+        pros: ['Direct answers', 'Source citations', 'Pro search', 'Fast results'],
+        cons: ['Limited free tier', 'Not perfect', 'Can miss nuance'],
+        rating: 4.6,
+        ratingBreakdown: { features: 4.7, easeOfUse: 4.9, value: 4.4, support: 4.5 },
+        affiliateUrl: 'https://perplexity.ai',
+        coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800',
+        date: '2026-01-20',
+        category: 'AI Search',
     },
 ];
 
 export default function ReviewsPage() {
     return (
-        <>
-            {/* Hero */}
-            <section className="gradient-bg section-padding">
-                <div className="container-custom">
-                    <div className="max-w-3xl">
-                        <h1 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-4">
-                            AI Tool Reviews
-                        </h1>
-                        <p className="text-xl text-secondary-600">
-                            In-depth, honest reviews to help you choose the right AI tools for your needs.
-                        </p>
-                    </div>
+        <div className="section-padding bg-white">
+            <div className="container-custom">
+                <div className="text-center mb-12">
+                    <h1 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-4">
+                        AI Tool <span className="gradient-text">Reviews</span> 2026
+                    </h1>
+                    <p className="text-xl text-secondary-600 max-w-2xl mx-auto">
+                        In-depth, honest reviews of the latest AI tools. Updated for February 2026.
+                    </p>
                 </div>
-            </section>
 
-            {/* Reviews List */}
-            <section className="section-padding">
-                <div className="container-custom">
-                    <div className="space-y-8">
-                        {reviews.map((review) => (
-                            <article key={review.id} className="card overflow-hidden">
-                                <div className="grid md:grid-cols-3 gap-0">
-                                    {/* Image */}
-                                    <div className="relative aspect-video md:aspect-auto overflow-hidden">
-                                        <img
-                                            src={review.coverImage}
-                                            alt={review.title}
-                                            className="w-full h-full object-cover"
-                                        />
-                                        <div className="absolute top-4 left-4">
-                                            <span className="tag">{review.category}</span>
+                <div className="space-y-8">
+                    {reviews.map((review) => (
+                        <div key={review.id} className="bg-secondary-50 rounded-2xl overflow-hidden">
+                            <div className="grid md:grid-cols-3 gap-0">
+                                <div className="relative h-64 md:h-auto">
+                                    <img
+                                        src={review.coverImage}
+                                        alt={review.productName}
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="md:col-span-2 p-8">
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <span className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
+                                            {review.category}
+                                        </span>
+                                        <span className="text-secondary-500 text-sm">
+                                            {review.date}
+                                        </span>
+                                    </div>
+
+                                    <h2 className="text-2xl font-bold text-secondary-900 mb-3">
+                                        {review.title}
+                                    </h2>
+
+                                    <p className="text-secondary-600 mb-6">
+                                        {review.summary}
+                                    </p>
+
+                                    <div className="grid md:grid-cols-2 gap-4 mb-6">
+                                        <div>
+                                            <h4 className="font-semibold text-green-600 mb-2">Pros:</h4>
+                                            <ul className="space-y-1">
+                                                {review.pros.map((pro, i) => (
+                                                    <li key={i} className="text-sm text-secondary-600 flex items-center gap-2">
+                                                        <span className="text-green-500">✓</span> {pro}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-red-600 mb-2">Cons:</h4>
+                                            <ul className="space-y-1">
+                                                {review.cons.map((con, i) => (
+                                                    <li key={i} className="text-sm text-secondary-600 flex items-center gap-2">
+                                                        <span className="text-red-500">✗</span> {con}
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
                                     </div>
 
-                                    {/* Content */}
-                                    <div className="md:col-span-2 p-6">
-                                        <div className="flex items-center gap-3 mb-3">
-                                            <img
-                                                src={review.productLogo}
-                                                alt={review.productName}
-                                                className="w-10 h-10 rounded-lg object-cover"
-                                            />
-                                            <div>
-                                                <h2 className="font-heading font-bold text-xl text-secondary-900">
-                                                    <Link href={`/reviews/${review.slug}`} className="hover:text-primary-600">
-                                                        {review.title}
-                                                    </Link>
-                                                </h2>
-                                            </div>
-                                        </div>
-
-                                        <p className="text-secondary-600 mb-4">{review.summary}</p>
-
-                                        {/* Rating */}
-                                        <div className="flex items-center gap-4 mb-4">
-                                            <div className="flex items-center gap-1">
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center gap-2">
+                                            <div className="flex">
                                                 {[...Array(5)].map((_, i) => (
                                                     <Star
                                                         key={i}
-                                                        className={`w-5 h-5 ${i < Math.floor(review.rating) ? 'text-yellow-400 fill-current' : 'text-secondary-200'
-                                                            }`}
+                                                        className={`w-5 h-5 ${i < Math.floor(review.rating) ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}`}
                                                     />
                                                 ))}
-                                                <span className="ml-2 font-bold text-secondary-900">{review.rating}</span>
                                             </div>
-                                            <span className="text-sm text-secondary-500">
-                                                {review.date}
-                                            </span>
+                                            <span className="font-bold text-secondary-900">{review.rating}</span>
                                         </div>
-
-                                        {/* Pros & Cons */}
-                                        <div className="grid sm:grid-cols-2 gap-4 mb-4">
-                                            <div>
-                                                <h4 className="text-sm font-semibold text-green-600 flex items-center gap-1 mb-2">
-                                                    <ThumbsUp className="w-4 h-4" /> Pros
-                                                </h4>
-                                                <ul className="space-y-1">
-                                                    {review.pros.slice(0, 2).map((pro) => (
-                                                        <li key={pro} className="text-sm text-secondary-600 flex items-start gap-2">
-                                                            <span className="text-green-500 mt-0.5">•</span>
-                                                            {pro}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h4 className="text-sm font-semibold text-red-500 flex items-center gap-1 mb-2">
-                                                    <ThumbsDown className="w-4 h-4" /> Cons
-                                                </h4>
-                                                <ul className="space-y-1">
-                                                    {review.cons.slice(0, 2).map((con) => (
-                                                        <li key={con} className="text-sm text-secondary-600 flex items-start gap-2">
-                                                            <span className="text-red-400 mt-0.5">•</span>
-                                                            {con}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div className="flex items-center gap-4">
-                                            <Link
-                                                href={`/reviews/${review.slug}`}
-                                                className="text-primary-600 font-medium flex items-center gap-1 hover:gap-2 transition-all"
-                                            >
-                                                Read Full Review <ArrowRight className="w-4 h-4" />
-                                            </Link>
-                                            <AffiliateButton href={review.affiliateUrl} text="Try It" size="sm" />
-                                        </div>
+                                        <AffiliateButton
+                                            href={review.affiliateUrl}
+                                            text="Visit Website"
+                                            variant="primary"
+                                        />
                                     </div>
                                 </div>
-                            </article>
-                        ))}
-                    </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            </section>
-        </>
+            </div>
+        </div>
     );
 }
