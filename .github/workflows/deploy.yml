@@ -1,20 +1,18 @@
-# Note: If you connected GitHub to Cloudflare directly, 
-# this workflow is NOT needed - Cloudflare will deploy automatically!
-# You can delete this file if using direct integration.
-
 name: Deploy to Cloudflare Pages
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  # This job only runs if you want to use GitHub Actions for deployment
-  # If you connected GitHub to Cloudflare directly, you can skip this
   build-and-deploy:
     runs-on: ubuntu-latest
-    if: false  # Disabled by default - use direct Cloudflare integration
+    permissions:
+      contents: read
+      deployments: write
     
     steps:
       - name: Checkout repository
@@ -40,7 +38,7 @@ jobs:
           NEXT_PUBLIC_GA_ID: ${{ secrets.GA_ID }}
 
       - name: Deploy to Cloudflare Pages
-        if: false  # Disabled
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
