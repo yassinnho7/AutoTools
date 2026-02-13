@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { CheckCircle, Mail, Zap, Gift, Shield } from 'lucide-react';
 
 const benefits = [
@@ -10,53 +9,10 @@ const benefits = [
     { icon: Shield, text: 'Tips and tutorials for growing your business' },
 ];
 
+// Brevo form iframe from your account
+const BREVO_IFRAME = "https://154abd02.sibforms.com/serve/MUIFAKgA2QvABqQLnxKFbQluc9q2yO8uiMp9zjdk3TtQwAzrFFzCxTRpdxRUT0Eh3GYeLOehP5YsevVKxHRiMWHO1l2LCWZ8ZiadT0cTL8rsPwK0EN6oMhxLj5q1J-9PeLrIaw5Ia7xxMQtcmBPNSZuMgFpN2Vje176NXOBQNL6GVTwZsJfjMy5yQ6i5oG1_J0fsoD7QChDd_aT9Tg==";
+
 export default function NewsletterPage() {
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setStatus('loading');
-
-        // For static export, we'll use Make.com webhook or direct form
-        // You can set up a Make.com scenario to handle form submissions
-        // Or use Tally.so / Cloudflare Forms as alternative
-
-        // Simulate success for demo - in production connect to Make.com webhook
-        setTimeout(() => {
-            setStatus('success');
-            setMessage('Thank you for subscribing! Check your inbox for a welcome email.');
-            setEmail('');
-            setName('');
-        }, 1000);
-
-        /* 
-        // Production: Use Make.com webhook
-        try {
-          const makeWebhookUrl = 'YOUR_MAKE_WEBHOOK_URL';
-          const response = await fetch(makeWebhookUrl, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, name, source: 'newsletter' }),
-          });
-          
-          if (response.ok) {
-            setStatus('success');
-            setMessage('Thank you for subscribing!');
-            setEmail('');
-            setName('');
-          } else {
-            throw new Error('Failed to subscribe');
-          }
-        } catch (err) {
-          setStatus('error');
-          setMessage('Something went wrong. Please try again.');
-        }
-        */
-    };
-
     return (
         <>
             <section className="gradient-bg section-padding">
@@ -70,50 +26,32 @@ export default function NewsletterPage() {
                             Get the Best AI Tools{' '}
                             <span className="gradient-text">Weekly</span>
                         </h1>
-                        <p className="text-xl text-secondary-600 mb-10">
+                        <p className="text-xl text-secondary-600 mb-8">
                             Stay ahead of the curve with our curated newsletter. Expert reviews, exclusive deals, and actionable tips delivered every week.
                         </p>
 
-                        {status === 'success' ? (
-                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8 max-w-lg mx-auto">
-                                <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                                <h2 className="text-2xl font-bold text-green-800 mb-2">You're In!</h2>
-                                <p className="text-green-700">{message}</p>
-                            </div>
-                        ) : (
-                            <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
-                                <div className="space-y-4">
-                                    <input
-                                        type="text"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
-                                        placeholder="Your first name"
-                                        className="w-full px-6 py-4 rounded-xl border border-secondary-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all text-lg"
-                                    />
-                                    <input
-                                        type="email"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        placeholder="Your email address"
-                                        required
-                                        className="w-full px-6 py-4 rounded-xl border border-secondary-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all text-lg"
-                                    />
-                                    <button
-                                        type="submit"
-                                        disabled={status === 'loading'}
-                                        className="btn-primary btn-lg w-full disabled:opacity-50"
-                                    >
-                                        {status === 'loading' ? 'Subscribing...' : 'Subscribe Free'}
-                                    </button>
-                                </div>
-                                {status === 'error' && (
-                                    <p className="text-red-500 mt-4 text-sm">{message}</p>
-                                )}
-                                <p className="text-sm text-secondary-500 mt-4">
-                                    No spam. Unsubscribe anytime. We respect your privacy.
-                                </p>
-                            </form>
-                        )}
+                        {/* Brevo Form Iframe */}
+                        <div className="bg-white rounded-2xl shadow-lg p-4 mx-auto max-w-xl">
+                            <iframe
+                                src={BREVO_IFRAME}
+                                width="100%"
+                                height="305"
+                                frameBorder="0"
+                                scrolling="auto"
+                                allowFullScreen
+                                style={{
+                                    display: 'block',
+                                    marginLeft: 'auto',
+                                    marginRight: 'auto',
+                                    maxWidth: '100%',
+                                    borderRadius: '12px'
+                                }}
+                            />
+                        </div>
+
+                        <p className="text-sm text-secondary-500 mt-4">
+                            No spam. Unsubscribe anytime. We respect your privacy.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -133,6 +71,30 @@ export default function NewsletterPage() {
                                     <p className="text-secondary-700 font-medium">{benefit.text}</p>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section-padding bg-secondary-50">
+                <div className="container-custom">
+                    <div className="max-w-2xl mx-auto text-center">
+                        <h2 className="text-2xl font-bold text-secondary-900 mb-4">
+                            Why Subscribe?
+                        </h2>
+                        <p className="text-secondary-600 mb-6">
+                            Join thousands of creators who trust us to deliver the best AI tools and insights every week. We research, test, and recommend only the tools that actually work.
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            <div className="px-4 py-2 bg-white rounded-full shadow-sm text-sm font-medium text-secondary-700">
+                                ✓ Free weekly newsletter
+                            </div>
+                            <div className="px-4 py-2 bg-white rounded-full shadow-sm text-sm font-medium text-secondary-700">
+                                ✓ No credit card required
+                            </div>
+                            <div className="px-4 py-2 bg-white rounded-full shadow-sm text-sm font-medium text-secondary-700">
+                                ✓ Unsubscribe anytime
+                            </div>
                         </div>
                     </div>
                 </div>
