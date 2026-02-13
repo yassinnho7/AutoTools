@@ -1,23 +1,25 @@
 {
     "niche": "AI Tools / Software / Online Creators",
     "targetAudience": "Content creators, marketers, entrepreneurs, and professionals looking to leverage AI tools",
+    "lastUpdated": "2026-02-13",
     "articleTitles": [
-        "Best AI Writing Tools in 2024: Complete Guide",
-        "ChatGPT vs Claude vs Gemini: Which AI is Best?",
-        "50+ AI Tools Every Content Creator Needs",
-        "Midjourney Guide for Beginners: Create Stunning AI Art",
-        "Best AI SEO Tools to Rank Higher in 2024",
-        "Top AI Video Editing Tools for Creators",
-        "AI Tools for Social Media Marketing",
-        "How to Use AI for Email Marketing",
-        "Best AI Chatbots for Customer Service",
+        "Best AI Agents in 2026: Complete Guide to Autonomous AI",
+        "GPT-5 vs Claude 4 vs Gemini 2: Which AI is Best in 2026?",
+        "100+ AI Tools Every Creator Needs in 2026",
+        "Runway Gen-3 vs Kling AI vs Pika: Best AI Video Tool 2026",
+        "ElevenLabs vs Respeecher: Best AI Voice Cloning 2026",
+        "How to Build an AI-Powered Business in 2026",
+        "Best AI SEO Tools to Rank Higher in 2026",
+        "AI Video Editing Tools for YouTube Creators",
+        "AI Tools for Social Media Marketing in 2026",
+        "How to Use AI for Email Marketing Automation",
+        "Best AI Chatbots for Customer Service 2026",
         "AI Tools for Productivity and Time Management",
-        "How to Make Money with AI in 2024",
-        "AI Tools for Graphic Design",
+        "How to Make Money with AI in 2026: Complete Guide",
+        "AI Tools for Graphic Design 2026",
         "Best AI Presentation Makers",
         "AI Tools for Research and Writing",
-        "How to Build an AI-Powered Business",
-        "AI Tools for Coding and Development",
+        "Best AI Coding Assistants 2026",
         "Best AI Transcription Tools",
         "AI Tools for Data Analysis",
         "How to Use AI for Content Repurposing",
@@ -29,615 +31,202 @@
         "How to Use AI for Personal Finance",
         "Best AI Tools for Sales Teams",
         "AI Tools for Project Management",
-        "How to Create AI Avatars and Virtual Presenters",
+        "How to Create AI Avatars and Virtual Influencers",
         "Best AI Tools for Podcasters",
         "AI Tools for Language Learning",
         "How to Use AI for Market Research",
-        "Best AI Tools for Note-Taking",
-        "AI Tools for Customer Support",
-        "How to Automate Your Workflow with AI",
-        "Best AI Tools for Email Writing",
-        "AI Tools for Resume and Job Search",
+        "Best AI Note-Taking Apps 2026",
+        "How to Automate Your Workflow with AI Agents",
+        "Best AI Email Writing Tools",
+        "AI Tools for Resume Building",
         "How to Use AI for A/B Testing",
-        "Best AI Tools for Web Design",
-        "AI Tools for Legal Professionals",
-        "How to Create AI-Powered Chatbots",
+        "Best AI Web Design Tools",
+        "How to Build AI-Powered Chatbots",
         "Best AI Tools for Healthcare",
         "AI Tools for Event Planning",
         "How to Use AI for Competitor Analysis",
-        "Best AI Tools for Accounting",
+        "Best AI Accounting Tools",
         "AI Tools for Teachers and Educators",
         "How to Use AI for Lead Generation",
-        "Best AI Tools for UX Design",
-        "AI Tools for Nonprofits",
-        "How to Use AI for Brand Monitoring",
-        "Best AI Tools for Remote Teams",
-        "AI Tools for Freelancers",
-        "How to Use AI for Content Curation",
-        "Best AI Tools for Influencer Marketing",
-        "AI Tools for Photographers",
-        "How to Use AI for SEO Optimization",
+        "Sora vs Runway: Best AI Video Generator",
+        "Best AI Image Generators 2026: Midjourney vs DALL-E vs Stable Diffusion",
+        "How to Use AI Agents for Business Automation",
         "Best AI Tools for Affiliate Marketing",
-        "AI Tools for Dropshipping",
-        "How to Use AI for Social Listening",
-        "Best AI Tools for CRM",
-        "AI Tools for Inventory Management",
-        "How to Use AI for Price Optimization",
-        "Best AI Tools for Copywriting",
-        "AI Tools for Bookkeeping",
-        "How to Use AI for Customer Segmentation",
-        "Best AI Tools for Proposal Writing",
-        "AI Tools for Grant Writing",
-        "How to Use AI for Trend Analysis",
-        "Best AI Tools for Meeting Notes",
-        "AI Tools for Survey Creation",
-        "How to Use AI for Content Personalization",
-        "Best AI Tools for Video Marketing",
-        "AI Tools for Podcast Editing",
-        "How to Use AI for Ad Copy Optimization",
-        "Best AI Tools for Landing Pages",
-        "AI Tools for Email Automation",
-        "How to Use AI for Keyword Research",
-        "Best AI Tools for Schema Markup",
-        "AI Tools for Backlink Analysis",
-        "How to Use AI for Content Gap Analysis",
-        "Best AI Tools for Technical SEO",
-        "AI Tools for Local SEO",
-        "How to Use AI for Voice Search Optimization",
-        "Best AI Tools for Image Optimization",
-        "AI Tools for Speed Optimization",
-        "How to Use AI for Mobile SEO",
-        "Best AI Tools for Analytics",
-        "AI Tools for Heat Mapping",
-        "How to Use AI for User Behavior Analysis",
-        "Best AI Tools for A/B Testing Landing Pages",
-        "AI Tools for Form Optimization",
-        "How to Use AI for Conversion Rate Optimization",
-        "Best AI Tools for Checkout Optimization",
-        "AI Tools for Cart Abandonment",
-        "How to Use AI for Customer Lifetime Value",
-        "Best AI Tools for Predictive Analytics",
-        "AI Tools for Churn Prediction",
-        "How to Use AI for Upselling and Cross-selling",
-        "Best AI Tools for Customer Journey Mapping"
+        "AI Content Detection Tools: Are They Accurate?"
     ],
     "digitalProductIdeas": [
         {
-            "name": "AI Writing Masterclass",
-            "description": "Complete course on using AI writing tools for content creation",
-            "price": 47,
+            "name": "AI Tools Mastermind Course",
+            "description": "Complete course on using AI tools for business growth",
+            "price": 197,
             "category": "Course"
         },
         {
-            "name": "AI Tools Database",
-            "description": "Curated database of 500+ AI tools with reviews and pricing",
-            "price": 19,
-            "category": "Resource"
+            "name": "500+ AI Tools Database",
+            "description": "Curated database of AI tools with reviews and pricing",
+            "price": 49,
+            "category": "Database"
         },
         {
-            "name": "Prompt Engineering Guide",
-            "description": "100+ tested prompts for various AI tools",
+            "name": "AI Prompts Library",
+            "description": "1000+ proven AI prompts for various use cases",
             "price": 29,
-            "category": "Guide"
+            "category": "Template"
         },
         {
-            "name": "AI Marketing Playbook",
-            "description": "Complete guide to AI-powered marketing strategies",
+            "name": "AI Business Automation Guide",
+            "description": "Step-by-step guide to automating your business with AI",
             "price": 67,
-            "category": "Guide"
+            "category": "E-book"
         },
         {
-            "name": "Content Calendar Templates",
-            "description": "AI-powered content calendar templates",
-            "price": 17,
-            "category": "Template"
+            "name": "YouTube AI Tools Reviews",
+            "description": "Monthly reviews of new AI tools for content creators",
+            "price": 19,
+            "category": "Subscription"
         },
         {
-            "name": "AI Business Starter Kit",
-            "description": "Everything needed to start an AI-powered business",
-            "price": 97,
-            "category": "Bundle"
-        },
-        {
-            "name": "ChatGPT Prompt Library",
-            "description": "500+ prompts for business, marketing, and productivity",
-            "price": 29,
-            "category": "Resource"
-        },
-        {
-            "name": "AI Image Generation Course",
-            "description": "Master Midjourney, DALL-E, and Stable Diffusion",
-            "price": 57,
+            "name": "AI Affiliate Marketing System",
+            "description": "Complete system for promoting AI tools as affiliate",
+            "price": 147,
             "category": "Course"
         },
         {
-            "name": "SEO Automation Toolkit",
-            "description": "Templates and workflows for AI-powered SEO",
-            "price": 39,
+            "name": "ChatGPT Prompts for Business",
+            "description": "500+ business prompts for ChatGPT and AI assistants",
+            "price": 37,
             "category": "Template"
         },
         {
-            "name": "AI Video Creation Guide",
-            "description": "Create professional videos with AI tools",
-            "price": 47,
-            "category": "Guide"
-        }
-    ],
-    "affiliateReviewIdeas": [
-        {
-            "product": "ChatGPT Plus",
-            "category": "AI Writing",
-            "commission": "N/A",
-            "angle": "Is the $20/month subscription worth it?"
-        },
-        {
-            "product": "Jasper AI",
-            "category": "AI Writing",
-            "commission": "30%",
-            "angle": "Best AI writer for marketing teams?"
-        },
-        {
-            "product": "Copy.ai",
-            "category": "AI Writing",
-            "commission": "30%",
-            "angle": "Best budget AI copywriting tool?"
-        },
-        {
-            "product": "Midjourney",
-            "category": "AI Design",
-            "commission": "N/A",
-            "angle": "Best AI art generator for creators?"
-        },
-        {
-            "product": "Descript",
-            "category": "AI Video",
-            "commission": "25%",
-            "angle": "Revolutionary video editing with AI?"
-        },
-        {
-            "product": "Notion AI",
-            "category": "Productivity",
-            "commission": "50%",
-            "angle": "Best AI note-taking integration?"
-        },
-        {
-            "product": "Surfer SEO",
-            "category": "SEO Tools",
-            "commission": "25%",
-            "angle": "Best AI-powered SEO tool?"
-        },
-        {
-            "product": "Writesonic",
-            "category": "AI Writing",
-            "commission": "30%",
-            "angle": "Best all-in-one AI writing suite?"
-        },
-        {
-            "product": "Rytr",
-            "category": "AI Writing",
-            "commission": "30%",
-            "angle": "Best affordable AI writer?"
-        },
-        {
-            "product": "Frase",
-            "category": "SEO Tools",
-            "commission": "30%",
-            "angle": "Best AI for SEO content briefs?"
-        },
-        {
-            "product": "Pictory",
-            "category": "AI Video",
-            "commission": "25%",
-            "angle": "Best AI for turning blog posts into videos?"
-        },
-        {
-            "product": "Synthesia",
-            "category": "AI Video",
-            "commission": "20%",
-            "angle": "Best AI avatar video creator?"
-        },
-        {
-            "product": "Runway ML",
-            "category": "AI Video",
-            "commission": "20%",
-            "angle": "Best professional AI video editing?"
-        },
-        {
-            "product": "Beautiful.ai",
-            "category": "AI Design",
-            "commission": "25%",
-            "angle": "Best AI presentation maker?"
-        },
-        {
-            "product": "Canva AI",
-            "category": "AI Design",
-            "commission": "36%",
-            "angle": "Best AI design tool for non-designers?"
-        },
-        {
-            "product": "Grammarly",
-            "category": "AI Writing",
-            "commission": "20%",
-            "angle": "Essential AI writing assistant?"
-        },
-        {
-            "product": "Wordtune",
-            "category": "AI Writing",
-            "commission": "20%",
-            "angle": "Best AI for rewriting content?"
-        },
-        {
-            "product": "Quillbot",
-            "category": "AI Writing",
-            "commission": "20%",
-            "angle": "Best AI paraphrasing tool?"
-        },
-        {
-            "product": "Otter.ai",
-            "category": "AI Audio",
-            "commission": "20%",
-            "angle": "Best AI transcription for meetings?"
-        },
-        {
-            "product": "Murf AI",
-            "category": "AI Audio",
-            "commission": "20%",
-            "angle": "Best AI voice generator?"
-        }
-    ],
-    "comparisonPostIdeas": [
-        {
-            "title": "ChatGPT vs Claude vs Gemini",
-            "products": [
-                "ChatGPT",
-                "Claude",
-                "Gemini"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Midjourney vs DALL-E vs Stable Diffusion",
-            "products": [
-                "Midjourney",
-                "DALL-E",
-                "Stable Diffusion"
-            ],
-            "category": "AI Design"
-        },
-        {
-            "title": "Jasper vs Copy.ai vs Writesonic",
-            "products": [
-                "Jasper",
-                "Copy.ai",
-                "Writesonic"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Notion AI vs Obsidian AI vs Mem",
-            "products": [
-                "Notion AI",
-                "Obsidian",
-                "Mem"
-            ],
-            "category": "Productivity"
-        },
-        {
-            "title": "Surfer SEO vs Frase vs MarketMuse",
-            "products": [
-                "Surfer SEO",
-                "Frase",
-                "MarketMuse"
-            ],
-            "category": "SEO Tools"
-        },
-        {
-            "title": "Descript vs Pictory vs Synthesia",
-            "products": [
-                "Descript",
-                "Pictory",
-                "Synthesia"
-            ],
-            "category": "AI Video"
-        },
-        {
-            "title": "Grammarly vs ProWritingAid vs Wordtune",
-            "products": [
-                "Grammarly",
-                "ProWritingAid",
-                "Wordtune"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Canva AI vs Beautiful.ai vs Designs.ai",
-            "products": [
-                "Canva AI",
-                "Beautiful.ai",
-                "Designs.ai"
-            ],
-            "category": "AI Design"
-        },
-        {
-            "title": "Otter.ai vs Rev vs Trint",
-            "products": [
-                "Otter.ai",
-                "Rev",
-                "Trint"
-            ],
-            "category": "AI Audio"
-        },
-        {
-            "title": "Rytr vs Jasper vs Copy.ai",
-            "products": [
-                "Rytr",
-                "Jasper",
-                "Copy.ai"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "ChatGPT vs Jasper for Marketing",
-            "products": [
-                "ChatGPT",
-                "Jasper"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Notion AI vs ChatGPT for Note-Taking",
-            "products": [
-                "Notion AI",
-                "ChatGPT"
-            ],
-            "category": "Productivity"
-        },
-        {
-            "title": "Midjourney vs Leonardo AI",
-            "products": [
-                "Midjourney",
-                "Leonardo AI"
-            ],
-            "category": "AI Design"
-        },
-        {
-            "title": "Synthesia vs HeyGen vs D-ID",
-            "products": [
-                "Synthesia",
-                "HeyGen",
-                "D-ID"
-            ],
-            "category": "AI Video"
-        },
-        {
-            "title": "Murf AI vs ElevenLabs vs Play.ht",
-            "products": [
-                "Murf AI",
-                "ElevenLabs",
-                "Play.ht"
-            ],
-            "category": "AI Audio"
-        },
-        {
-            "title": "Writesonic vs Rytr for Blog Writing",
-            "products": [
-                "Writesonic",
-                "Rytr"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Surfer SEO vs Clearscope",
-            "products": [
-                "Surfer SEO",
-                "Clearscope"
-            ],
-            "category": "SEO Tools"
-        },
-        {
-            "title": "Descript vs Adobe Podcast",
-            "products": [
-                "Descript",
-                "Adobe Podcast"
-            ],
-            "category": "AI Audio"
-        },
-        {
-            "title": "Canva AI vs Adobe Firefly",
-            "products": [
-                "Canva AI",
-                "Adobe Firefly"
-            ],
-            "category": "AI Design"
-        },
-        {
-            "title": "ChatGPT Plus vs Claude Pro",
-            "products": [
-                "ChatGPT Plus",
-                "Claude Pro"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Jasper vs ChatGPT for Copywriting",
-            "products": [
-                "Jasper",
-                "ChatGPT"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Pictory vs InVideo AI",
-            "products": [
-                "Pictory",
-                "InVideo AI"
-            ],
-            "category": "AI Video"
-        },
-        {
-            "title": "Frase vs Scalenut",
-            "products": [
-                "Frase",
-                "Scalenut"
-            ],
-            "category": "SEO Tools"
-        },
-        {
-            "title": "Copy.ai vs Writesonic for Ads",
-            "products": [
-                "Copy.ai",
-                "Writesonic"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Runway ML vs Pika Labs",
-            "products": [
-                "Runway ML",
-                "Pika Labs"
-            ],
-            "category": "AI Video"
-        },
-        {
-            "title": "Grammarly vs LanguageTool",
-            "products": [
-                "Grammarly",
-                "LanguageTool"
-            ],
-            "category": "AI Writing"
-        },
-        {
-            "title": "Notion AI vs Coda AI",
-            "products": [
-                "Notion AI",
-                "Coda AI"
-            ],
-            "category": "Productivity"
-        },
-        {
-            "title": "Beautiful.ai vs Tome",
-            "products": [
-                "Beautiful.ai",
-                "Tome"
-            ],
-            "category": "AI Design"
-        },
-        {
-            "title": "Otter.ai vs Fireflies.ai",
-            "products": [
-                "Otter.ai",
-                "Fireflies.ai"
-            ],
-            "category": "AI Audio"
-        },
-        {
-            "title": "Quillbot vs Wordtune for Paraphrasing",
-            "products": [
-                "Quillbot",
-                "Wordtune"
-            ],
-            "category": "AI Writing"
-        }
-    ],
-    "leadMagnetIdeas": [
-        {
-            "name": "AI Tools Cheatsheet",
-            "description": "Quick reference guide to 50+ AI tools",
-            "type": "PDF"
-        },
-        {
-            "name": "ChatGPT Prompt Pack",
-            "description": "100+ prompts for business and marketing",
-            "type": "PDF"
-        },
-        {
-            "name": "AI Writing Checklist",
-            "description": "Checklist for creating AI-assisted content",
-            "type": "PDF"
-        },
-        {
-            "name": "SEO with AI Mini-Course",
-            "description": "5-day email course on AI-powered SEO",
-            "type": "Email Course"
+            "name": "AI Video Creation Course",
+            "description": "Learn to create videos with AI tools",
+            "price": 127,
+            "category": "Course"
         },
         {
             "name": "AI Tools Comparison Spreadsheet",
-            "description": "Compare features and pricing of top AI tools",
-            "type": "Spreadsheet"
+            "description": "Excel sheet comparing 200+ AI tools",
+            "price": 24,
+            "category": "Template"
         },
         {
-            "name": "Content Calendar Template",
-            "description": "AI-powered content planning template",
-            "type": "Notion Template"
-        },
+            "name": "AI Newsletter Templates",
+            "description": "Ready-to-use newsletter templates with AI prompts",
+            "price": 39,
+            "category": "Template"
+        }
+    ],
+    "affiliateReviewIdeas": [
+        "Claude 4 Review: Is It Better Than ChatGPT?",
+        "Runway Gen-3 Review: The Future of AI Video?",
+        "ElevenLabs Review: Best AI Voice Generator?",
+        "Jasper AI Review 2026: Is It Still Worth It?",
+        "Copy.ai Review: Still Relevant in 2026?",
+        "Midjourney V7 Review: What's New?",
+        "Notion AI Review: Complete Guide",
+        "Grammarly AI Review 2026",
+        "ChatGPT 5 Review: Features and Pricing",
+        "Google Gemini  Analysis2 Review: Complete",
+        "Perplexity AI Review: The New Search Engine?",
+        "Adobe Firefly 2 Review: AI Image Generation",
+        "Synthesia Review: AI Video Platform",
+        "Descript AI Review: Video Editing Made Easy",
+        "Pika Labs Review: Worth the Hype?",
+        "Kling AI Review: The New AI Video Star",
+        "HeyGen Review: AI Avatar Platform",
+        "Beautiful.ai Review: AI Presentations",
+        "CopyMonkey Review: AI Amazon Listings",
+        "Jasper Art Review: AI Image Generator"
+    ],
+    "comparisonIdeas": [
+        "ChatGPT vs Claude 4 vs Gemini 2: Complete Comparison 2026",
+        "Midjourney vs DALL-E 3 vs Stable Diffusion: Best AI Image?",
+        "Runway vs Pika vs Kling: Best AI Video Generator?",
+        "ElevenLabs vs Murf AI vs WellSaid: Best Voiceover?",
+        "Jasper vs Copy.ai vs Writesonic: Best AI Writing?",
+        "Notion AI vs Obsidian AI vs Logseq: Best Note-Taking?",
+        "Grammarly vs LanguageTool vs Ginger: Best Grammar?",
+        "Descript vs Premiere Pro vs CapCut: Best Video Editor?",
+        "Synthesia vs HeyGen vs Colossyan: Best AI Avatar?",
+        "Otter vs Rev vs Descript: Best Transcription?",
+        "Copy.ai vs Anyword vs Hypotenuse: Best Marketing Copy?",
+        "Perplexity vs ChatGPT vs Gemini: Best AI Search?",
+        "Claude vs GPT-5 vs Gemini: Best for Coding?",
+        "Synthesia vs Pictory vs InVideo: Best for Short Videos?",
+        "Murf vs WellSaid vs PlayHT: Best Text-to-Speech?",
+        "Jasper vs ContentBot vs INK: Best SEO Content?",
+        "Canva AI vs Adobe Firefly vs Microsoft Designer",
+        "ChatPDF vs AskYourPDF vs PDFgpt: Best PDF AI?",
+        "Character AI vs Replika vs Candy.ai: Best Chatbot?",
+        "Lovo AI vs Respeecher vs Speechify: Best Voice Cloning?",
+        "Pika vs Runway vs Kaiber: Best for Social Media?",
+        "GitHub Copilot vs Cursor vs Codeium: Best Coding AI?",
+        "Beautiful.ai vs Gamma vs SlidesAI: Best Presentations?",
+        "Otter vs Fireflies vs Fathom: Best Meeting Notes?",
+        "HubSpot AI vs Salesforce Einstein vs Pipedrive AI",
+        "Writesonic vs ArticleForge vs ContentBot: Best Articles?",
+        "SurferSEO vs NeuronWriter vs Frase: Best SEO Writer?",
+        "Murf vs Listnr vs Voicera: Best Podcast Voiceover?",
+        "Fotor vs Canva vs Pixlr: Best AI Image Editor?",
+        "Luma Dream Machine vs Runway vs Pika: 2026 Comparison"
+    ],
+    "leadMagnetIdeas": [
         {
-            "name": "AI Image Prompts Guide",
-            "description": "Prompts for Midjourney, DALL-E, and more",
+            "name": "100 AI Tools for Creators",
+            "description": "Free list of 100+ AI tools every creator needs",
             "type": "PDF"
         },
         {
-            "name": "Productivity with AI Toolkit",
-            "description": "Templates and workflows for AI productivity",
-            "type": "Bundle"
+            "name": "ChatGPT Prompt Cheatsheet",
+            "description": "50+ proven ChatGPT prompts for business",
+            "type": "PDF"
+        },
+        {
+            "name": "AI Tools Pricing Guide",
+            "description": "Complete pricing comparison of top AI tools",
+            "type": "Spreadsheet"
+        },
+        {
+            "name": "Weekly AI Tools Tracker",
+            "description": "Track new AI tools and updates weekly",
+            "type": "Notion Template"
+        },
+        {
+            "name": "AI Business Roadmap",
+            "description": "Step-by-step guide to starting AI business",
+            "type": "PDF"
         }
     ],
-    "executionPlan": {
-        "week1": {
-            "title": "Setup & Foundation",
-            "tasks": [
-                "Set up Next.js project with all dependencies",
-                "Configure TailwindCSS and base styling",
-                "Create layout components (Header, Footer)",
-                "Set up Supabase database and auth",
-                "Configure Brevo email service",
-                "Set up Cloudinary for images",
-                "Create GitHub repository",
-                "Configure Cloudflare Pages deployment"
-            ]
-        },
-        "week2": {
-            "title": "Content Creation",
-            "tasks": [
-                "Write 10 foundational blog posts",
-                "Create 5 product reviews",
-                "Build 3 comparison articles",
-                "Set up content generation scripts",
-                "Create lead magnets",
-                "Set up email sequences"
-            ]
-        },
-        "week3": {
-            "title": "Products & Monetization",
-            "tasks": [
-                "Create first digital product",
-                "Set up Gumroad store",
-                "Configure Digistore24 affiliate links",
-                "Create product listing pages",
-                "Set up affiliate tracking",
-                "Create CTA components"
-            ]
-        },
-        "week4": {
-            "title": "Automation & Scaling",
-            "tasks": [
-                "Set up Make.com scenarios",
-                "Configure GitHub Actions",
-                "Set up analytics tracking",
-                "Create content generation pipeline",
-                "Set up weekly newsletter",
-                "Test all automations"
-            ]
-        },
-        "week5Plus": {
-            "title": "Scaling & Growth",
-            "tasks": [
-                "Publish 3-5 articles per week",
-                "Build backlinks",
-                "Grow email list",
-                "Create more digital products",
-                "Optimize for conversions",
-                "Expand affiliate partnerships"
-            ]
-        }
+    "contentCalendar": {
+        "weekly": [
+            "1 AI tool review",
+            "1 AI comparison article",
+            "1 AI news/update post"
+        ],
+        "monthly": [
+            "Top 10 AI tools of the month",
+            "New AI tools roundup",
+            "AI industry trends report"
+        ]
+    },
+    "seoStrategy": {
+        "primaryKeywords": [
+            "AI tools",
+            "best AI tools 2026",
+            "AI tools for business",
+            "AI tools for creators"
+        ],
+        "longTailKeywords": [
+            "best AI video generators 2026",
+            "how to use AI agents for business",
+            "AI tools comparison 2026",
+            "free AI tools for content creators"
+        ],
+        "contentPillars": [
+            "AI Tool Reviews",
+            "AI Comparisons",
+            "AI Tutorials",
+            "AI Business Guides"
+        ]
     }
 }
