@@ -1,48 +1,35 @@
+# GitHub Actions workflow - Optional
+# Since you're using direct integration (Connect to Git), Cloudflare will deploy automatically!
+# This workflow is only needed if you want more control.
+
 name: Deploy to Cloudflare Pages
 
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  # This job is disabled - Cloudflare direct integration handles deployment
+  deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    
+    if: false  # Disabled - use Cloudflare direct integration instead
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build project
-        run: npm run build
+      
+      - name: Build
+        run: npm ci && npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: ${{ secrets.SITE_URL }}
-          NEXT_PUBLIC_SITE_NAME: ${{ secrets.SITE_NAME }}
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-          NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
-          NEXT_PUBLIC_GA_ID: ${{ secrets.GA_ID }}
+          NEXT_PUBLIC_SITE_URL: https://autotools-2k3.pages.dev
+          NEXT_PUBLIC_SUPABASE_URL: https://ebkwwwjzouajlqsvykjj.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: dc1f1wcuh
 
-      - name: Deploy to Cloudflare Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      - name: Deploy
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: autotools-2k3
           directory: out
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
