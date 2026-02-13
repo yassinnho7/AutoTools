@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import '@/styles/globals.css';
 import { Header, Footer } from '@/components/layout';
 import { siteConfig } from '@/lib/config';
+import { EmailPopup } from '@/components/EmailPopup';
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteConfig.url),
@@ -66,6 +67,7 @@ export default function RootLayout({
                 <Header />
                 <main className="flex-1 pt-16 md:pt-20">{children}</main>
                 <Footer />
+                <EmailPopup />
             </body>
         </html>
     );
